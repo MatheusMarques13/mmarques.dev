@@ -1,1 +1,30 @@
-bmFtZTogVXBsb2FkIExhcmdlIEZpbGVzCgpvbjoKICBwdXNoOgogICAgYnJhbmNoZXM6IFttYWluXQogICAgcGF0aHM6CiAgICAgIC0gJy5naXRodWIvd29ya2Zsb3dzL3VwbG9hZC1maWxlcy55bWwnCgpqb2JzOgogIHVwbG9hZDoKICAgIHJ1bnMtb246IHVidW50dS1sYXRlc3QKICAgIHBlcm1pc3Npb25zOgogICAgICBjb250ZW50czogd3JpdGUKICAgIHN0ZXBzOgogICAgICAtIHVzZXM6IGFjdGlvbnMvY2hlY2tvdXRAdjQKICAgICAgICB3aXRoOgogICAgICAgICAgZmV0Y2gtZGVwdGg6IDAKCiAgICAgIC0gbmFtZTogRG93bmxvYWQgYW5kIGNvbW1pdCBsYXJnZSBmaWxlcwogICAgICAgIHJ1bjogfAogICAgICAgICAgY3VybCAtTCAiaHR0cHM6Ly90bXBmaWxlcy5vcmcvZGwvMjY5NDYyMzIvcmV0cm9sZXNzb24tcHJldmlldy5qcGciIC1vIHJldHJvbGVzc29uLXByZXZpZXcuanBnCiAgICAgICAgICBjdXJsIC1MICJodHRwczovL3RtcGZpbGVzLm9yZy9kbC8yNjk0NjI0MS9jb2RlbmV3cy1wcmV2aWV3LnBuZyIgLW8gY29kZW5ld3MtcHJldmlldy5wbmcKICAgICAgICAgIGN1cmwgLUwgImh0dHBzOi8vdG1wZmlsZXMub3JnL2RsLzI2OTQ2MjUzL21haW4uNzVkZjA5NTMuanMudHh0IiAtbyBzdGF0aWMvanMvbWFpbi43NWRmMDk1My5qcwogICAgICAgICAgIyBWZXJpZnkgZG93bmxvYWRzCiAgICAgICAgICBscyAtbGEgcmV0cm9sZXNzb24tcHJldmlldy5qcGcgY29kZW5ld3MtcHJldmlldy5wbmcgc3RhdGljL2pzL21haW4uNzVkZjA5NTMuanMKICAgICAgICAgIGdpdCBjb25maWcgdXNlci5lbWFpbCAiMTM1Mjg3OTkwK01hdGhldXNNYXJxdWVzMTNAdXNlcnMubm9yZXBseS5naXRodWIuY29tIgogICAgICAgICAgZ2l0IGNvbmZpZyB1c2VyLm5hbWUgIk1hdGhldXNNYXJxdWVzMTMiCiAgICAgICAgICBnaXQgYWRkIHJldHJvbGVzc29uLXByZXZpZXcuanBnIGNvZGVuZXdzLXByZXZpZXcucG5nIHN0YXRpYy9qcy9tYWluLjc1ZGYwOTUzLmpzCiAgICAgICAgICBnaXQgZGlmZiAtLWNhY2hlZCAtLXN0YXQKICAgICAgICAgIGdpdCBjb21taXQgLW0gIkFkZCBSZXRyb0xlc3NvbiBhbmQgQ29kZU5ld3MgcHJvamVjdHMiIHx8IGVjaG8gIk5vdGhpbmcgdG8gY29tbWl0IgogICAgICAgICAgZ2l0IHB1c2gK
+name: Upload Large Files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/upload-files.yml'
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download and commit large files
+        run: |
+          curl -L "https://tmpfiles.org/dl/26946232/retrolesson-preview.jpg" -o retrolesson-preview.jpg
+          curl -L "https://tmpfiles.org/dl/26946241/codenews-preview.png" -o codenews-preview.png
+          curl -L "https://tmpfiles.org/dl/26946253/main.75df0953.js.txt" -o static/js/main.75df0953.js
+          ls -la retrolesson-preview.jpg codenews-preview.png static/js/main.75df0953.js
+          git config user.email "135287990+MatheusMarques13@users.noreply.github.com"
+          git config user.name "MatheusMarques13"
+          git add retrolesson-preview.jpg codenews-preview.png static/js/main.75df0953.js
+          git diff --cached --stat
+          git commit -m "Add RetroLesson and CodeNews projects" || echo "Nothing to commit"
+          git push
