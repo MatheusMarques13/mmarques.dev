@@ -1,6 +1,11 @@
 name: Upload Bundles
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/upload-bundles.yml'
   workflow_dispatch:
 
 jobs:
@@ -121,6 +126,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
+          git status
+          git diff --cached --name-only
           git commit -m "Add language selector with 6 languages" || echo "Nothing to commit"
           git push
 
