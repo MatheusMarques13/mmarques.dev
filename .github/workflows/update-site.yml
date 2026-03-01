@@ -1,5 +1,9 @@
 name: Update Site
-on: workflow_dispatch
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-site.yml'
 jobs:
   update:
     runs-on: ubuntu-latest
