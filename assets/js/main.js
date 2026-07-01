@@ -133,7 +133,7 @@
   if (canvas && !reduceMotion) {
     const ctx = canvas.getContext("2d");
     let w, h, dpr, nodes, raf;
-    const COLORS = ["#34d6ee", "#9b8cff", "#ff3d81", "#44e08a", "#ffd23f"];
+    const COLORS = ["#f3a9c5", "#a6c8f2", "#c6b6ef", "#93d4ab"];
 
     const resize = () => {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -170,7 +170,7 @@
           const dx = a.x - b.x, dy = a.y - b.y;
           const dist = Math.hypot(dx, dy);
           if (dist < LINK) {
-            ctx.globalAlpha = (1 - dist / LINK) * 0.16;
+            ctx.globalAlpha = (1 - dist / LINK) * 0.45;
             ctx.strokeStyle = a.c;
             ctx.lineWidth = 1;
             ctx.beginPath();
@@ -181,7 +181,7 @@
         }
       }
       for (const n of nodes) {
-        ctx.globalAlpha = 0.7;
+        ctx.globalAlpha = 0.9;
         ctx.fillStyle = n.c;
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
