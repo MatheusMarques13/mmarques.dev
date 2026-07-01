@@ -3,245 +3,233 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#fbf8f5" />
-  <meta name="description" content="Matheus Marques — Software Engineer & Robotics Teacher. Portfolio of web apps, games and creative software." />
-  <meta property="og:title" content="Matheus Marques | Portfolio" />
-  <meta property="og:description" content="Software Engineer & Robotics Teacher — building software where engineering meets creative direction." />
+  <meta name="theme-color" content="#faf6ed" />
+  <meta name="description" content="matheus marques — software engineer & robotics teacher. portfolio of web apps, games and creative software." />
+  <meta property="og:title" content="matheus marques | portfolio" />
+  <meta property="og:description" content="software engineer & robotics teacher — building software where engineering meets creative direction." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mmarques.dev/" />
-  <meta property="og:image" content="https://mmarques.dev/retrolesson-preview.jpg" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23fbf8f5'/%3E%3Cpath d='M8 8 L24 13 M8 8 L13 24 M24 13 L21 25 M13 24 L21 25' stroke='%23c6b6ef' stroke-width='1.4' stroke-linecap='round'/%3E%3Ccircle cx='8' cy='8' r='3' fill='%23d76a97'/%3E%3Ccircle cx='24' cy='13' r='2.6' fill='%235b8fd6'/%3E%3Ccircle cx='13' cy='24' r='2.3' fill='%23f3a9c5'/%3E%3Ccircle cx='21' cy='25' r='2.1' fill='%238a76d6'/%3E%3C/svg%3E" />
+  <meta property="og:image" content="https://mmarques.dev/retromynd-preview.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23faf6ed'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='600' fill='%232c2722' text-anchor='middle'%3Em.%3C/text%3E%3Ccircle cx='25' cy='8' r='3' fill='%23d6493a'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Matheus Marques | Portfolio</title>
+  <title>matheus marques | portfolio</title>
 </head>
 <body data-lang="en">
-  <canvas class="bg-canvas" id="bg-canvas" aria-hidden="true"></canvas>
-  <div class="bg-glow" aria-hidden="true"></div>
 
-  <!-- ============================ NAV ============================ -->
+  <!-- ============================ nav ============================ -->
   <header class="nav" id="nav">
     <div class="wrap">
-      <a class="brand" href="#top" aria-label="Matheus Marques — home">
+      <a class="brand" href="#top" aria-label="matheus marques — home">
         <svg class="glyph" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <defs>
-            <linearGradient id="g1" x1="0" y1="0" x2="32" y2="32">
-              <stop offset="0" stop-color="#f3a9c5"/>
-              <stop offset="0.55" stop-color="#c6b6ef"/>
-              <stop offset="1" stop-color="#a6c8f2"/>
-            </linearGradient>
-          </defs>
-          <path d="M7 7 L25 13 M7 7 L13 25 M25 13 L21 26 M13 25 L21 26" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round"/>
-          <circle cx="7" cy="7" r="3.4" fill="#d76a97"/>
-          <circle cx="25" cy="13" r="3" fill="#5b8fd6"/>
-          <circle cx="13" cy="25" r="2.6" fill="#8a76d6"/>
-          <circle cx="21" cy="26" r="2.4" fill="#f3a9c5"/>
+          <path d="M7 8 L25 13 M7 8 L13 25 M25 13 L21 26 M13 25 L21 26" stroke="#9c9384" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7" cy="8" r="3.2" fill="#3e6ad4"/>
+          <circle cx="25" cy="13" r="2.8" fill="#d6493a"/>
+          <circle cx="13" cy="25" r="2.5" fill="#3aa37c"/>
+          <circle cx="21" cy="26" r="2.3" fill="#c4663c"/>
         </svg>
-        <b>M<span>.</span>MARQUES</b>
+        <b>m<span>.</span>marques</b>
       </a>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#works" data-en="Works" data-pt="Projetos">Works</a>
-        <a href="#about" data-en="About" data-pt="Sobre">About</a>
-        <a href="#skills" data-en="Skills" data-pt="Skills">Skills</a>
-        <a href="#contact" data-en="Contact" data-pt="Contato">Contact</a>
+      <nav class="nav-links" aria-label="primary">
+        <a href="#works" data-en="works" data-pt="projetos">works</a>
+        <a href="#about" data-en="about" data-pt="sobre">about</a>
+        <a href="#skills" data-en="skills" data-pt="skills">skills</a>
+        <a href="#contact" data-en="contact" data-pt="contato">contact</a>
       </nav>
 
       <div class="nav-actions">
-        <div class="lang-toggle" role="group" aria-label="Language">
-          <button data-lang-btn="en" class="active">EN</button>
-          <button data-lang-btn="pt">PT</button>
+        <div class="lang-toggle" role="group" aria-label="language">
+          <button data-lang-btn="en" class="active">en</button>
+          <button data-lang-btn="pt">pt</button>
         </div>
-        <a href="#contact" class="btn btn-primary nav-hello" data-en="Say hello" data-pt="Fala comigo">Say hello</a>
-        <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+        <a href="#contact" class="btn btn-primary nav-hello" data-en="say hello" data-pt="fala comigo">say hello</a>
+        <button class="nav-burger" id="burger" aria-label="menu" aria-expanded="false"><span></span></button>
       </div>
     </div>
   </header>
 
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#works" data-en="Works" data-pt="Projetos">Works</a>
-    <a href="#about" data-en="About" data-pt="Sobre">About</a>
-    <a href="#skills" data-en="Skills" data-pt="Skills">Skills</a>
-    <a href="#contact" data-en="Contact" data-pt="Contato">Contact</a>
+    <a href="#works" data-en="works" data-pt="projetos">works</a>
+    <a href="#about" data-en="about" data-pt="sobre">about</a>
+    <a href="#skills" data-en="skills" data-pt="skills">skills</a>
+    <a href="#contact" data-en="contact" data-pt="contato">contact</a>
   </div>
 
   <main id="top">
-    <!-- ============================ HERO ============================ -->
+    <!-- ============================ hero ============================ -->
     <section class="hero" id="hero">
       <div class="wrap">
-        <span class="status-pill"><span class="dot"></span><span data-en="Available for projects" data-pt="Disponível para projetos">Available for projects</span></span>
+        <span class="status-pill tone-2"><span class="dot"></span><span data-en="available for projects" data-pt="disponível para projetos">available for projects</span></span>
 
-        <h1>MATHEUS <span class="accent">MARQUES</span></h1>
+        <h1>matheus <span class="accent">marques</span></h1>
 
-        <p class="tagline" data-en="Software engineer blending clean code with creative direction." data-pt="Engenheiro de software unindo código limpo e direção criativa.">Software engineer blending clean code with creative direction.</p>
+        <p class="tagline" data-en="software engineer blending clean code with creative direction." data-pt="engenheiro de software unindo código limpo e direção criativa.">software engineer blending clean code with creative direction.</p>
 
-        <p class="role">
-          <span data-en="Software Engineer &amp; Robotics Teacher" data-pt="Engenheiro de Software &amp; Professor de Robótica">Software Engineer &amp; Robotics Teacher</span>
-        </p>
+        <p class="role" data-en="software engineer &amp; robotics teacher" data-pt="engenheiro de software &amp; professor de robótica">software engineer &amp; robotics teacher</p>
 
         <div class="hero-cta">
-          <a href="#works" class="btn btn-primary" data-en="View my work" data-pt="Ver projetos">
-            View my work
+          <a href="#works" class="btn btn-primary" data-en="view my work" data-pt="ver projetos">
+            view my work
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="#contact" class="btn btn-ghost" data-en="Start a project" data-pt="Iniciar projeto">Start a project</a>
+          <a href="#contact" class="btn btn-ghost" data-en="start a project" data-pt="iniciar projeto">start a project</a>
         </div>
 
-        <a href="#works" class="scroll-hint" aria-label="Scroll down">
-          <span data-en="Scroll" data-pt="Rolar">Scroll</span>
+        <a href="#works" class="scroll-hint" aria-label="scroll down">
+          <span data-en="scroll" data-pt="rolar">scroll</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
     </section>
 
-    <!-- ============================ WORKS ============================ -->
+    <!-- ============================ works ============================ -->
     <section id="works">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="eyebrow" data-en="Selected works" data-pt="Trabalhos selecionados">Selected works</span>
-          <h2 data-en="My Projects" data-pt="Meus Projetos">My Projects</h2>
-          <p data-en="A mix of web apps, games and experiments — where engineering meets a bit of play." data-pt="Uma mistura de web apps, jogos e experimentos — onde engenharia encontra um pouco de diversão.">A mix of web apps, games and experiments — where engineering meets a bit of play.</p>
+          <span class="tape tone-1" data-en="selected works" data-pt="trabalhos selecionados">selected works</span>
+          <h2 data-en="my projects" data-pt="meus projetos">my projects</h2>
+          <p data-en="a mix of web apps, games and experiments — where engineering meets a bit of play." data-pt="uma mistura de web apps, jogos e experimentos — onde engenharia encontra um pouco de diversão.">a mix of web apps, games and experiments — where engineering meets a bit of play.</p>
         </div>
 
         <div class="filters reveal" id="work-filters">
-          <button class="chip active" data-filter="all" data-en="All" data-pt="Todos">All</button>
-          <button class="chip" data-filter="e-commerce">E-commerce</button>
-          <button class="chip" data-filter="full-stack">Full-stack</button>
-          <button class="chip" data-filter="edtech">EdTech</button>
-          <button class="chip" data-filter="web-app" data-en="Web App" data-pt="Web App">Web App</button>
-          <button class="chip" data-filter="news" data-en="News" data-pt="Notícias">News</button>
-          <button class="chip" data-filter="web-design" data-en="Web Design" data-pt="Web Design">Web Design</button>
-          <button class="chip" data-filter="game" data-en="Game" data-pt="Jogo">Game</button>
-          <button class="chip" data-filter="social-app" data-en="Social App" data-pt="App Social">Social App</button>
-          <button class="chip" data-filter="portfolio">Portfolio</button>
+          <button class="chip active" data-filter="all" data-en="all" data-pt="todos">all</button>
+          <button class="chip" data-filter="e-commerce">e-commerce</button>
+          <button class="chip" data-filter="full-stack">full-stack</button>
+          <button class="chip" data-filter="edtech">edtech</button>
+          <button class="chip" data-filter="web-app">web app</button>
+          <button class="chip" data-filter="news" data-en="news" data-pt="notícias">news</button>
+          <button class="chip" data-filter="web-design">web design</button>
+          <button class="chip" data-filter="game" data-en="game" data-pt="jogo">game</button>
+          <button class="chip" data-filter="social-app" data-en="social app" data-pt="app social">social app</button>
+          <button class="chip" data-filter="portfolio">portfolio</button>
         </div>
 
         <div class="works-grid" id="works-grid">
 
-          <!-- Retromynd -->
-          <article class="work reveal" data-cat="e-commerce full-stack">
+          <!-- retromynd -->
+          <article class="work reveal tilt-a" data-cat="e-commerce full-stack">
+            <span class="pin" style="--pin:#d6493a"></span>
             <div class="work-thumb">
               <span class="work-year">2026</span>
-              <img src="./retromynd-preview.jpg" alt="Retromynd preview" loading="lazy" />
+              <img src="./retromynd-preview.jpg" alt="retromynd preview" loading="lazy" />
             </div>
             <div class="work-body">
-              <h3>Retromynd</h3>
-              <p data-en="A retro-themed geek culture marketplace featuring gaming gear, collectibles, retro tech, and more. Fully functional e-commerce with a nostalgic 90s infomercial vibe." data-pt="Marketplace de cultura geek com tema retrô — gaming, colecionáveis, retro tech e mais. E-commerce totalmente funcional com a vibe nostálgica de comercial dos anos 90.">A retro-themed geek culture marketplace featuring gaming gear, collectibles, retro tech, and more. Fully functional e-commerce with a nostalgic 90s infomercial vibe.</p>
-              <div class="work-tags"><span class="tag">E-commerce</span><span class="tag">Full-stack</span></div>
+              <h3>retromynd</h3>
+              <p data-en="a retro-themed geek culture marketplace featuring gaming gear, collectibles, retro tech, and more. fully functional e-commerce with a nostalgic 90s infomercial vibe." data-pt="marketplace de cultura geek com tema retrô — gaming, colecionáveis, retro tech e mais. e-commerce totalmente funcional com a vibe nostálgica de comercial dos anos 90.">a retro-themed geek culture marketplace featuring gaming gear, collectibles, retro tech, and more. fully functional e-commerce with a nostalgic 90s infomercial vibe.</p>
+              <div class="work-tags"><span class="tag tone-1">e-commerce</span><span class="tag tone-0">full-stack</span></div>
               <a class="work-link" href="https://gewztwuvqmlxc.mocha.app/" target="_blank" rel="noopener">
-                <span data-en="Visit site" data-pt="Ver site">Visit site</span>
+                <span data-en="visit site" data-pt="ver site">visit site</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- RetroLesson -->
-          <article class="work reveal" data-cat="edtech web-app">
+          <!-- retrolesson -->
+          <article class="work reveal tilt-b" data-cat="edtech web-app">
+            <span class="pin" style="--pin:#3e6ad4"></span>
             <div class="work-thumb">
               <span class="work-year">2025</span>
-              <img src="./retrolesson-preview.jpg" alt="RetroLesson preview" loading="lazy" />
+              <img src="./retrolesson-preview.jpg" alt="retrolesson preview" loading="lazy" />
             </div>
             <div class="work-body">
-              <h3>RetroLesson</h3>
-              <p data-en="A retro-themed daily coding challenge platform with an arcade aesthetic. Timed algorithm problems, a built-in Python code editor, quiz mode, progress tracking, and bilingual support — all wrapped in pixel fonts and a dark navy UI." data-pt="Plataforma de desafios diários de código com estética arcade. Problemas de algoritmo cronometrados, editor Python embutido, modo quiz, acompanhamento de progresso e suporte bilíngue — tudo com fontes pixel e UI navy escura.">A retro-themed daily coding challenge platform with an arcade aesthetic. Timed algorithm problems, a built-in Python code editor, quiz mode, progress tracking, and bilingual support — all wrapped in pixel fonts and a dark navy UI.</p>
-              <div class="work-tags"><span class="tag">EdTech</span><span class="tag">Web App</span></div>
+              <h3>retrolesson</h3>
+              <p data-en="a retro-themed daily coding challenge platform with an arcade aesthetic. timed algorithm problems, a built-in python code editor, quiz mode, progress tracking, and bilingual support." data-pt="plataforma de desafios diários de código com estética arcade. problemas de algoritmo cronometrados, editor python embutido, modo quiz, progresso e suporte bilíngue.">a retro-themed daily coding challenge platform with an arcade aesthetic. timed algorithm problems, a built-in python code editor, quiz mode, progress tracking, and bilingual support.</p>
+              <div class="work-tags"><span class="tag tone-4">edtech</span><span class="tag tone-2">web app</span></div>
               <a class="work-link" href="https://retrolesson.figma.site/" target="_blank" rel="noopener">
-                <span data-en="Visit site" data-pt="Ver site">Visit site</span>
+                <span data-en="visit site" data-pt="ver site">visit site</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- CodeNews -->
-          <article class="work reveal" data-cat="news web-design">
+          <!-- codenews -->
+          <article class="work reveal tilt-c" data-cat="news web-design">
+            <span class="pin" style="--pin:#3aa37c"></span>
             <div class="work-thumb">
               <span class="work-year">2023</span>
-              <img src="./codenews-preview.png" alt="CodeNews preview" loading="lazy" />
+              <img src="./codenews-preview.png" alt="codenews preview" loading="lazy" />
             </div>
             <div class="work-body">
-              <h3>CodeNews</h3>
-              <p data-en="A developer-focused digital newspaper delivering daily tech intelligence. Covers AI, open-source, dev tools, cloud infrastructure, and career tips with a classic editorial layout, serif typography, and live edition updates." data-pt="Um jornal digital focado em devs, entregando inteligência técnica diária. Cobre IA, open-source, ferramentas de dev, infraestrutura cloud e dicas de carreira — com layout editorial clássico, tipografia serifada e edições ao vivo.">A developer-focused digital newspaper delivering daily tech intelligence. Covers AI, open-source, dev tools, cloud infrastructure, and career tips with a classic editorial layout, serif typography, and live edition updates.</p>
-              <div class="work-tags"><span class="tag">News</span><span class="tag">Web Design</span></div>
+              <h3>codenews</h3>
+              <p data-en="a developer-focused digital newspaper delivering daily tech intelligence. covers ai, open-source, dev tools, cloud infrastructure, and career tips with a classic editorial layout." data-pt="um jornal digital focado em devs, com inteligência técnica diária. cobre ia, open-source, ferramentas, infra cloud e carreira — com layout editorial clássico.">a developer-focused digital newspaper delivering daily tech intelligence. covers ai, open-source, dev tools, cloud infrastructure, and career tips with a classic editorial layout.</p>
+              <div class="work-tags"><span class="tag tone-3" data-en="news" data-pt="notícias">news</span><span class="tag tone-0">web design</span></div>
               <a class="work-link" href="https://codenews.figma.site/" target="_blank" rel="noopener">
-                <span data-en="Visit site" data-pt="Ver site">Visit site</span>
+                <span data-en="visit site" data-pt="ver site">visit site</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- ConnectTheNotes -->
-          <article class="work reveal" data-cat="game full-stack">
+          <!-- connectthenotes -->
+          <article class="work reveal tilt-d" data-cat="game full-stack">
+            <span class="pin" style="--pin:#c4663c"></span>
             <div class="work-thumb">
               <span class="work-year">2026</span>
-              <div class="placeholder" style="background:radial-gradient(120% 120% at 20% 0%, #efe4fb, transparent 60%), radial-gradient(120% 120% at 100% 100%, #dcecfb, transparent 60%), #f7f3ef;">
-                <span class="ph-mark" style="background:linear-gradient(120deg,#8a76d6,#5b8fd6);-webkit-background-clip:text;background-clip:text;color:transparent;">♪ ⟶ ♪</span>
-              </div>
+              <div class="placeholder toned tone-0"><span class="ph-mark">♪ → ♪</span></div>
             </div>
             <div class="work-body">
-              <h3>ConnectTheNotes</h3>
-              <p data-en="A game made for music fans. Connect your favorite singers through the collabs between them. Inspired by Connect the Stars by Eric Bai and Amanda Hum." data-pt="Um jogo para fãs de música. Conecte seus cantores favoritos pelas colaborações entre eles. Inspirado em Connect the Stars, de Eric Bai e Amanda Hum.">A game made for music fans. Connect your favorite singers through the collabs between them. Inspired by Connect the Stars by Eric Bai and Amanda Hum.</p>
-              <div class="work-tags"><span class="tag">Game</span><span class="tag">Full-stack</span></div>
+              <h3>connectthenotes</h3>
+              <p data-en="a game made for music fans. connect your favorite singers through the collabs between them. inspired by connect the stars by eric bai and amanda hum." data-pt="um jogo para fãs de música. conecte seus cantores favoritos pelas colaborações entre eles. inspirado em connect the stars, de eric bai e amanda hum.">a game made for music fans. connect your favorite singers through the collabs between them. inspired by connect the stars by eric bai and amanda hum.</p>
+              <div class="work-tags"><span class="tag tone-0" data-en="game" data-pt="jogo">game</span><span class="tag tone-1">full-stack</span></div>
               <a class="work-link" href="https://github.com/MatheusMarques13/ConnectTheNotes" target="_blank" rel="noopener">
-                <span data-en="View on GitHub" data-pt="Ver no GitHub">View on GitHub</span>
+                <span data-en="view on github" data-pt="ver no github">view on github</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- DiscourseFlow -->
-          <article class="work reveal" data-cat="social-app full-stack">
+          <!-- discourseflow -->
+          <article class="work reveal tilt-b" data-cat="social-app full-stack">
+            <span class="pin" style="--pin:#3e6ad4"></span>
             <div class="work-thumb">
               <span class="work-year">2026</span>
-              <div class="placeholder" style="background:radial-gradient(120% 120% at 0% 0%, #dcf1e6, transparent 60%), radial-gradient(120% 120% at 100% 100%, #dcecfb, transparent 60%), #f7f3ef;">
-                <span class="ph-mark" style="background:linear-gradient(120deg,#4fae7d,#5b8fd6);-webkit-background-clip:text;background-clip:text;color:transparent;">❝ ❞</span>
-              </div>
+              <div class="placeholder toned tone-2"><span class="ph-mark">❝ ❞</span></div>
             </div>
             <div class="work-body">
-              <h3>DiscourseFlow</h3>
-              <p data-en="A topic and conversation manager for friend groups who have a lot to say and always forget the most important things when they reunite." data-pt="Um gerenciador de tópicos e conversas para grupos de amigos que têm muito a dizer e sempre esquecem o mais importante nos reencontros.">A topic and conversation manager for friend groups who have a lot to say and always forget the most important things when they reunite.</p>
-              <div class="work-tags"><span class="tag">Social App</span><span class="tag">Full-stack</span></div>
+              <h3>discourseflow</h3>
+              <p data-en="a topic and conversation manager for friend groups who have a lot to say and always forget the most important things when they reunite." data-pt="um gerenciador de tópicos e conversas para grupos de amigos que têm muito a dizer e sempre esquecem o mais importante nos reencontros.">a topic and conversation manager for friend groups who have a lot to say and always forget the most important things when they reunite.</p>
+              <div class="work-tags"><span class="tag tone-2" data-en="social app" data-pt="app social">social app</span><span class="tag tone-4">full-stack</span></div>
               <a class="work-link" href="https://github.com/MatheusMarques13/DiscourseFlow" target="_blank" rel="noopener">
-                <span data-en="View on GitHub" data-pt="Ver no GitHub">View on GitHub</span>
+                <span data-en="view on github" data-pt="ver no github">view on github</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- PixelPort -->
-          <article class="work reveal" data-cat="portfolio pixel-art">
+          <!-- pixelport -->
+          <article class="work reveal tilt-a" data-cat="portfolio pixel-art">
+            <span class="pin" style="--pin:#d6493a"></span>
             <div class="work-thumb">
               <span class="work-year">2026</span>
-              <div class="placeholder" style="background:radial-gradient(120% 120% at 100% 0%, #ffdfe9, transparent 60%), radial-gradient(120% 120% at 0% 100%, #efe4fb, transparent 60%), #f7f3ef;">
-                <span class="ph-mark" style="background:linear-gradient(120deg,#d76a97,#8a76d6);-webkit-background-clip:text;background-clip:text;color:transparent;">▦</span>
-              </div>
+              <div class="placeholder toned tone-1"><span class="ph-mark">▦</span></div>
             </div>
             <div class="work-body">
-              <h3>PixelPort</h3>
-              <p data-en="A portfolio template inspired by pixel art — the predecessor to this very site." data-pt="Um modelo de portfólio inspirado em pixel art — o antecessor deste próprio site.">A portfolio template inspired by pixel art — the predecessor to this very site.</p>
-              <div class="work-tags"><span class="tag">Portfolio</span><span class="tag">Pixel Art</span></div>
+              <h3>pixelport</h3>
+              <p data-en="a portfolio template inspired by pixel art — the predecessor to this very site." data-pt="um modelo de portfólio inspirado em pixel art — o antecessor deste próprio site.">a portfolio template inspired by pixel art — the predecessor to this very site.</p>
+              <div class="work-tags"><span class="tag tone-1">portfolio</span><span class="tag tone-3">pixel art</span></div>
               <a class="work-link" href="https://github.com/MatheusMarques13/PixelPort" target="_blank" rel="noopener">
-                <span data-en="View on GitHub" data-pt="Ver no GitHub">View on GitHub</span>
+                <span data-en="view on github" data-pt="ver no github">view on github</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- InfinityNews -->
-          <article class="work reveal" data-cat="web-design html-css">
+          <!-- infinitynews -->
+          <article class="work reveal tilt-c" data-cat="web-design html-css">
+            <span class="pin" style="--pin:#3aa37c"></span>
             <div class="work-thumb">
               <span class="work-year">2024</span>
-              <div class="placeholder" style="background:radial-gradient(120% 120% at 50% 0%, #dcecfb, transparent 60%), #f7f3ef;">
-                <span class="ph-mark" style="background:linear-gradient(120deg,#5b8fd6,#d76a97);-webkit-background-clip:text;background-clip:text;color:transparent;">∞</span>
-              </div>
+              <div class="placeholder toned tone-3"><span class="ph-mark">∞</span></div>
             </div>
             <div class="work-body">
-              <h3>InfinityNews</h3>
-              <p data-en="One of my first projects in college — built with nothing but HTML and CSS." data-pt="Um dos meus primeiros projetos na faculdade — feito apenas com HTML e CSS.">One of my first projects in college — built with nothing but HTML and CSS.</p>
-              <div class="work-tags"><span class="tag">Web Design</span><span class="tag">HTML/CSS</span></div>
+              <h3>infinitynews</h3>
+              <p data-en="one of my first projects in college — built with nothing but html and css." data-pt="um dos meus primeiros projetos na faculdade — feito apenas com html e css.">one of my first projects in college — built with nothing but html and css.</p>
+              <div class="work-tags"><span class="tag tone-3">web design</span><span class="tag tone-0">html/css</span></div>
               <a class="work-link" href="https://github.com/MatheusMarques13/InfinityNews" target="_blank" rel="noopener">
-                <span data-en="View on GitHub" data-pt="Ver no GitHub">View on GitHub</span>
+                <span data-en="view on github" data-pt="ver no github">view on github</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -251,37 +239,38 @@
       </div>
     </section>
 
-    <!-- ============================ ABOUT ============================ -->
+    <!-- ============================ about ============================ -->
     <section id="about">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="eyebrow" data-en="About me" data-pt="Sobre mim">About me</span>
-          <h2 data-en="About Me" data-pt="Sobre Mim">About Me</h2>
+          <span class="tape tone-0" data-en="about me" data-pt="sobre mim">about me</span>
+          <h2 data-en="about me" data-pt="sobre mim">about me</h2>
         </div>
         <div class="about-grid">
           <div class="about-copy reveal">
-            <p data-en="I'm a 25-year-old beginner software engineer with a passion for technology, creativity, and storytelling. My journey in programming spans several languages — including JavaScript, Python, and Swift — which I enjoy using to bring ideas to life through code. As a cinephile, I thrive in collaborative environments and love exploring how software can merge with creative direction to build engaging experiences." data-pt="Sou um engenheiro de software iniciante, de 25 anos, apaixonado por tecnologia, criatividade e narrativa. Minha jornada na programação passa por várias linguagens — incluindo JavaScript, Python e Swift — que adoro usar para dar vida a ideias através do código. Como cinéfilo, prospero em ambientes colaborativos e adoro explorar como o software pode se unir à direção criativa para construir experiências envolventes.">I'm a 25-year-old beginner software engineer with a passion for technology, creativity, and storytelling. My journey in programming spans several languages — including JavaScript, Python, and Swift — which I enjoy using to bring ideas to life through code. As a cinephile, I thrive in collaborative environments and love exploring how software can merge with creative direction to build engaging experiences.</p>
-            <p data-en="Outside of engineering, I'm deeply inspired by music and videogames — two worlds that fuel my imagination and shape the way I approach problem-solving. Whether it's designing innovative solutions or finding artistic ways to express ideas, I'm driven by curiosity and a desire to grow both technically and creatively." data-pt="Fora da engenharia, sou profundamente inspirado por música e videogames — dois mundos que alimentam minha imaginação e moldam a forma como resolvo problemas. Seja projetando soluções inovadoras ou encontrando formas artísticas de expressar ideias, sou movido pela curiosidade e pela vontade de crescer técnica e criativamente.">Outside of engineering, I'm deeply inspired by music and videogames — two worlds that fuel my imagination and shape the way I approach problem-solving. Whether it's designing innovative solutions or finding artistic ways to express ideas, I'm driven by curiosity and a desire to grow both technically and creatively.</p>
+            <p data-en="i'm a 25-year-old beginner software engineer with a passion for technology, creativity, and storytelling. my journey in programming spans several languages — including javascript, python, and swift — which i enjoy using to bring ideas to life through code. as a cinephile, i thrive in collaborative environments and love exploring how software can merge with creative direction to build engaging experiences." data-pt="sou um engenheiro de software iniciante, de 25 anos, apaixonado por tecnologia, criatividade e narrativa. minha jornada na programação passa por várias linguagens — incluindo javascript, python e swift — que adoro usar para dar vida a ideias através do código. como cinéfilo, prospero em ambientes colaborativos e adoro explorar como o software pode se unir à direção criativa para construir experiências envolventes.">i'm a 25-year-old beginner software engineer with a passion for technology, creativity, and storytelling. my journey in programming spans several languages — including javascript, python, and swift — which i enjoy using to bring ideas to life through code. as a cinephile, i thrive in collaborative environments and love exploring how software can merge with creative direction to build engaging experiences.</p>
+            <p data-en="outside of engineering, i'm deeply inspired by music and videogames — two worlds that fuel my imagination and shape the way i approach problem-solving. whether it's designing innovative solutions or finding artistic ways to express ideas, i'm driven by curiosity and a desire to grow both technically and creatively." data-pt="fora da engenharia, sou profundamente inspirado por música e videogames — dois mundos que alimentam minha imaginação e moldam a forma como resolvo problemas. seja projetando soluções inovadoras ou encontrando formas artísticas de expressar ideias, sou movido pela curiosidade e pela vontade de crescer técnica e criativamente.">outside of engineering, i'm deeply inspired by music and videogames — two worlds that fuel my imagination and shape the way i approach problem-solving. whether it's designing innovative solutions or finding artistic ways to express ideas, i'm driven by curiosity and a desire to grow both technically and creatively.</p>
           </div>
 
           <aside class="about-card reveal">
-            <div class="card-bar"><i></i><i></i><i></i><span class="mono">self.profile</span></div>
+            <span class="card-tape tone-3" aria-hidden="true"></span>
+            <div class="card-bar"><span>self.profile</span></div>
             <ul class="about-facts">
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.2-7-11a7 7 0 1 1 14 0c0 5.8-7 11-7 11Z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg>
-                <div><div class="k" data-en="Based in" data-pt="Localização">Based in</div><div class="v">Fortaleza, Brasil</div></div>
+                <div><div class="k" data-en="based in" data-pt="localização">based in</div><div class="v">fortaleza, brasil</div></div>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <div><div class="k" data-en="Email" data-pt="Email">Email</div><div class="v">matheusbmarques13@gmail.com</div></div>
+                <div><div class="k">email</div><div class="v">matheusbmarques13@gmail.com</div></div>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <div><div class="k" data-en="Coding since" data-pt="Programando desde">Coding since</div><div class="v">2024</div></div>
+                <div><div class="k" data-en="coding since" data-pt="programando desde">coding since</div><div class="v">2024</div></div>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10 12 5 2 10l10 5 10-5Z" stroke-linejoin="round"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <div><div class="k" data-en="Education" data-pt="Formação">Education</div><div class="v" data-en="Graduating in Software Engineering" data-pt="Graduando em Engenharia de Software">Graduating in Software Engineering</div></div>
+                <div><div class="k" data-en="education" data-pt="formação">education</div><div class="v" data-en="graduating in software engineering" data-pt="graduando em engenharia de software">graduating in software engineering</div></div>
               </li>
             </ul>
           </aside>
@@ -289,48 +278,48 @@
       </div>
     </section>
 
-    <!-- ============================ SKILLS ============================ -->
+    <!-- ============================ skills ============================ -->
     <section id="skills">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="eyebrow" data-en="Skills &amp; services" data-pt="Habilidades &amp; serviços">Skills &amp; services</span>
-          <h2 data-en="Stack &amp; Skills" data-pt="Stack &amp; Skills">Stack &amp; Skills</h2>
+          <span class="tape tone-4" data-en="skills &amp; services" data-pt="habilidades &amp; serviços">skills &amp; services</span>
+          <h2 data-en="stack &amp; skills" data-pt="stack &amp; skills">stack &amp; skills</h2>
         </div>
 
         <div class="filters reveal" id="skill-filters">
-          <button class="chip active" data-skillfilter="all" data-en="All" data-pt="Todos">All</button>
-          <button class="chip" data-skillfilter="design" data-en="Design" data-pt="Design">Design</button>
-          <button class="chip" data-skillfilter="development" data-en="Development" data-pt="Desenvolvimento">Development</button>
+          <button class="chip active" data-skillfilter="all" data-en="all" data-pt="todos">all</button>
+          <button class="chip" data-skillfilter="design">design</button>
+          <button class="chip" data-skillfilter="development" data-en="development" data-pt="desenvolvimento">development</button>
         </div>
 
         <div class="skills-grid" id="skills-grid">
-          <div class="skill reveal" data-skillcat="design"><div class="skill-top"><span class="name">Pixel Art</span><span class="val">90</span></div><div class="skill-bar"><i data-val="90"></i></div></div>
-          <div class="skill reveal" data-skillcat="design"><div class="skill-top"><span class="name" data-en="Character Design" data-pt="Character Design">Character Design</span><span class="val">85</span></div><div class="skill-bar"><i data-val="85"></i></div></div>
-          <div class="skill reveal" data-skillcat="design"><div class="skill-top"><span class="name" data-en="Art Direction" data-pt="Direção de Arte">Art Direction</span><span class="val">80</span></div><div class="skill-bar"><i data-val="80"></i></div></div>
-          <div class="skill reveal" data-skillcat="design"><div class="skill-top"><span class="name">Web Design</span><span class="val">88</span></div><div class="skill-bar"><i data-val="88"></i></div></div>
-          <div class="skill reveal" data-skillcat="development"><div class="skill-top"><span class="name">JavaScript</span><span class="val">85</span></div><div class="skill-bar"><i data-val="85"></i></div></div>
-          <div class="skill reveal" data-skillcat="development"><div class="skill-top"><span class="name">Python</span><span class="val">82</span></div><div class="skill-bar"><i data-val="82"></i></div></div>
-          <div class="skill reveal" data-skillcat="development"><div class="skill-top"><span class="name">Swift</span><span class="val">75</span></div><div class="skill-bar"><i data-val="75"></i></div></div>
-          <div class="skill reveal" data-skillcat="development"><div class="skill-top"><span class="name">HTML &amp; CSS</span><span class="val">90</span></div><div class="skill-bar"><i data-val="90"></i></div></div>
+          <div class="skill reveal tone-1 tilt-a" data-skillcat="design"><span class="name">pixel art</span><div class="skill-meta"><span class="val">90</span><span class="of">/100</span></div></div>
+          <div class="skill reveal tone-0 tilt-b" data-skillcat="design"><span class="name">character design</span><div class="skill-meta"><span class="val">85</span><span class="of">/100</span></div></div>
+          <div class="skill reveal tone-3 tilt-c" data-skillcat="design"><span class="name" data-en="art direction" data-pt="direção de arte">art direction</span><div class="skill-meta"><span class="val">80</span><span class="of">/100</span></div></div>
+          <div class="skill reveal tone-2 tilt-d" data-skillcat="design"><span class="name">web design</span><div class="skill-meta"><span class="val">88</span><span class="of">/100</span></div></div>
+          <div class="skill reveal tone-4 tilt-b" data-skillcat="development"><span class="name">javascript</span><div class="skill-meta"><span class="val">85</span><span class="of">/100</span></div></div>
+          <div class="skill reveal tone-2 tilt-a" data-skillcat="development"><span class="name">python</span><div class="skill-meta"><span class="val">82</span><span class="of">/100</span></div></div>
+          <div class="skill reveal tone-0 tilt-d" data-skillcat="development"><span class="name">swift</span><div class="skill-meta"><span class="val">75</span><span class="of">/100</span></div></div>
+          <div class="skill reveal tone-1 tilt-c" data-skillcat="development"><span class="name">html &amp; css</span><div class="skill-meta"><span class="val">90</span><span class="of">/100</span></div></div>
         </div>
       </div>
     </section>
 
-    <!-- ============================ CONTACT ============================ -->
+    <!-- ============================ contact ============================ -->
     <section class="contact" id="contact">
       <div class="wrap">
-        <span class="eyebrow" data-en="Get in touch" data-pt="Vamos conversar">Get in touch</span>
-        <h2><span data-en="Let's build something" data-pt="Vamos construir algo">Let's build something</span> <span class="accent" data-en="together." data-pt="juntos.">together.</span></h2>
-        <p data-en="Got a project, an idea, or just want to say hi? My inbox is always open." data-pt="Tem um projeto, uma ideia, ou só quer dar um oi? Minha caixa de entrada está sempre aberta.">Got a project, an idea, or just want to say hi? My inbox is always open.</p>
+        <span class="tape tone-2" data-en="get in touch" data-pt="vamos conversar">get in touch</span>
+        <h2><span data-en="let's build something" data-pt="vamos construir algo">let's build something</span> <span class="accent" data-en="together." data-pt="juntos.">together.</span></h2>
+        <p data-en="got a project, an idea, or just want to say hi? my inbox is always open." data-pt="tem um projeto, uma ideia, ou só quer dar um oi? minha caixa de entrada está sempre aberta.">got a project, an idea, or just want to say hi? my inbox is always open.</p>
         <a class="email" href="mailto:matheusbmarques13@gmail.com">matheusbmarques13@gmail.com</a>
         <div class="socials">
-          <a href="https://github.com/MatheusMarques13" target="_blank" rel="noopener" aria-label="GitHub">
+          <a href="https://github.com/MatheusMarques13" target="_blank" rel="noopener" aria-label="github">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10 10 0 0 0 22 12 10 10 0 0 0 12 2Z"/></svg>
           </a>
-          <a href="https://www.linkedin.com/in/matheus-batista-marques-3285a71b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/matheus-batista-marques-3285a71b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" aria-label="linkedin">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3 8.5h3.9V21H3V8.5Zm6.5 0H13v1.7h.05c.49-.88 1.7-1.8 3.5-1.8 3.74 0 4.43 2.3 4.43 5.3V21H17V14.4c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.7-2.53 3.48V21H8.5V8.5Z"/></svg>
           </a>
-          <a href="https://www.instagram.com/matheusmarquess13?igsh=MnhpZTg3bWEyenQx&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+          <a href="https://www.instagram.com/matheusmarquess13?igsh=MnhpZTg3bWEyenQx&utm_source=qr" target="_blank" rel="noopener" aria-label="instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
           </a>
         </div>
@@ -338,37 +327,37 @@
     </section>
   </main>
 
-  <!-- ============================ FOOTER ============================ -->
+  <!-- ============================ footer ============================ -->
   <footer class="footer">
     <div class="wrap">
       <div class="f-brand">
         <a class="brand" href="#top">
           <svg class="glyph" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M7 7 L25 13 M7 7 L13 25 M25 13 L21 26 M13 25 L21 26" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="7" cy="7" r="3.4" fill="#d76a97"/><circle cx="25" cy="13" r="3" fill="#5b8fd6"/><circle cx="13" cy="25" r="2.6" fill="#8a76d6"/><circle cx="21" cy="26" r="2.4" fill="#f3a9c5"/>
+            <path d="M7 8 L25 13 M7 8 L13 25 M25 13 L21 26 M13 25 L21 26" stroke="#9c9384" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="7" cy="8" r="3.2" fill="#3e6ad4"/><circle cx="25" cy="13" r="2.8" fill="#d6493a"/><circle cx="13" cy="25" r="2.5" fill="#3aa37c"/><circle cx="21" cy="26" r="2.3" fill="#c4663c"/>
           </svg>
-          <b>M<span style="color:var(--accent)">.</span>MARQUES</b>
+          <b>m<span style="color:var(--accent)">.</span>marques</b>
         </a>
-        <p data-en="Designing and building software with intent — from Fortaleza, Brasil." data-pt="Projetando e construindo software com intenção — direto de Fortaleza, Brasil.">Designing and building software with intent — from Fortaleza, Brasil.</p>
+        <p data-en="designing and building software with intent — from fortaleza, brasil." data-pt="projetando e construindo software com intenção — direto de fortaleza, brasil.">designing and building software with intent — from fortaleza, brasil.</p>
       </div>
       <div class="footer-cols">
         <div>
-          <h4 data-en="Navigation" data-pt="Navegação">Navigation</h4>
-          <a href="#works" data-en="Works" data-pt="Projetos">Works</a>
-          <a href="#about" data-en="About" data-pt="Sobre">About</a>
-          <a href="#skills" data-en="Skills" data-pt="Skills">Skills</a>
-          <a href="#contact" data-en="Contact" data-pt="Contato">Contact</a>
+          <h4 data-en="navigation" data-pt="navegação">navigation</h4>
+          <a href="#works" data-en="works" data-pt="projetos">works</a>
+          <a href="#about" data-en="about" data-pt="sobre">about</a>
+          <a href="#skills" data-en="skills" data-pt="skills">skills</a>
+          <a href="#contact" data-en="contact" data-pt="contato">contact</a>
         </div>
         <div>
-          <h4 data-en="Connect" data-pt="Conecte-se">Connect</h4>
-          <a href="https://github.com/MatheusMarques13" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/matheus-batista-marques-3285a71b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://www.instagram.com/matheusmarquess13?igsh=MnhpZTg3bWEyenQx&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+          <h4 data-en="connect" data-pt="conecte-se">connect</h4>
+          <a href="https://github.com/MatheusMarques13" target="_blank" rel="noopener">github</a>
+          <a href="https://www.linkedin.com/in/matheus-batista-marques-3285a71b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener">linkedin</a>
+          <a href="https://www.instagram.com/matheusmarquess13?igsh=MnhpZTg3bWEyenQx&utm_source=qr" target="_blank" rel="noopener">instagram</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="wrap"><small>© 2026 Matheus Marques — <span data-en="All rights reserved." data-pt="Todos os direitos reservados.">All rights reserved.</span></small></div>
+      <div class="wrap"><small>© 2026 matheus marques — <span data-en="all rights reserved. keep it comfy." data-pt="todos os direitos reservados. keep it comfy.">all rights reserved. keep it comfy.</span></small></div>
     </div>
   </footer>
 
