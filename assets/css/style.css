@@ -103,6 +103,16 @@ body::before {
 .reveal { opacity: 0; transform: translateY(18px) rotate(var(--tilt, 0deg)); transition: opacity 0.65s var(--spring), transform 0.65s var(--spring), box-shadow 0.32s var(--spring); }
 .reveal.in { opacity: 1; transform: rotate(var(--tilt, 0deg)); }
 
+/* section-to-section "page" transition — plays once as each new
+   section is scrolled into view, whether by wheel, trackpad or touch */
+.page-in {
+  opacity: 0;
+  transform: translateY(72px) scale(0.975);
+  transition: opacity 0.9s var(--spring), transform 0.9s var(--spring);
+  will-change: transform, opacity;
+}
+.page-in.in { opacity: 1; transform: none; }
+
 section { position: relative; padding-block: clamp(70px, 10vw, 118px); }
 
 /* washi-tape label (section eyebrow) */
@@ -568,5 +578,5 @@ section { position: relative; padding-block: clamp(70px, 10vw, 118px); }
 /* ------------------------- Reduced motion ------------------------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
-  .reveal { opacity: 1; }
+  .reveal, .page-in { opacity: 1; transform: none; }
 }

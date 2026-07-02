@@ -76,7 +76,7 @@
     });
   });
 
-  /* -------------------------- Reveal on scroll -------------------------- */
+  /* ------------------ Reveal + section transitions on scroll ------------------ */
   if ("IntersectionObserver" in window && !reduceMotion) {
     const io = new IntersectionObserver(
       (entries) => {
@@ -89,8 +89,23 @@
       { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
     );
     $$(".reveal").forEach((el) => io.observe(el));
+
+    // whole-section "page" transition — bigger, slower motion than .reveal,
+    // triggered a touch earlier so it's mid-flight by the time inner
+    // .reveal content starts staggering in
+    const pageIo = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("in");
+          pageIo.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -4% 0px" }
+    );
+    $$(".page-in").forEach((el) => pageIo.observe(el));
   } else {
-    $$(".reveal").forEach((el) => el.classList.add("in"));
+    $$(".reveal, .page-in").forEach((el) => el.classList.add("in"));
   }
 
   /* ----------------------- Active nav on scroll ----------------------- */
